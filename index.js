@@ -68,7 +68,8 @@ wsServer.on('request', function(request) {
     if (message.type === 'utf8') {
       const dataFromClient = JSON.parse(message.utf8Data);
       const coordinate = {
-        coordinate: dataFromClient.coordinate
+        coordinate: dataFromClient.coordinate,
+        time: dataFromClient.timeStamp
       }
       if(streamOpen) {
         stream.write(JSON.stringify(coordinate) + "\n");
