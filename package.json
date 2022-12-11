@@ -10,7 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "dateformat": "^3.0.3",
-    "express": "^4.16.4",
+    "express": "^4.17.3",
     "http": "0.0.0",
     "mdns": "^2.5.1",
     "socket.io": "^2.2.0",
